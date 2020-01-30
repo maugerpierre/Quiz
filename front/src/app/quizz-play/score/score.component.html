@@ -1,0 +1,17 @@
+<main>
+  <ng-container *ngIf="quizz.progress.score === quizz.current.questions.length; then bravo else poo">
+  </ng-container>
+
+  <ng-template #bravo>
+    <fa-icon [icon]="faSmileWink"></fa-icon>
+    <h1>Bravo ! </h1>
+  </ng-template>
+
+  <ng-template #poo>
+    <fa-icon [icon]="faPoo"></fa-icon>
+    <h1>Peux mieux faire ! </h1>
+  </ng-template>
+
+<p>Ton score : {{quizz.progress.score}} / {{quizz.current.questions.length}}</p>
+  <button appAutofocus routerLink="/" class="primary"> Retour Accueil</button>
+</main>

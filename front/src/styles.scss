@@ -1,0 +1,90 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '../node_modules/normalize.css/normalize.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: inherit;
+  font-size: 1em;
+  font-family: sans-serif;
+
+  @media screen and (min-width: 900px) {
+    font-size: 1vw;
+  }
+}
+
+main {
+  width: 100%;
+  max-width: 40em;
+  padding: 0.5em;
+  display: flex;
+  flex-flow: column;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+
+  &:hover {
+    color: #222;
+  }
+}
+
+button {
+  border: 0.1em solid #eee;
+  background: #eee;
+  padding: 0.5em;
+
+  &:not(:disabled) {
+    &:hover {
+      border-color: #ddd;
+      background-color: #ddd;
+      cursor: pointer;
+    }
+    &:active {
+      border-color: #ddd;
+      background-color: #ddd;
+    }
+
+    &.primary{
+      border-color: #333;
+      background-color: #333;
+      color: white;
+
+        &:hover {
+          border-color: #444;
+          background-color: #444;
+        }
+        &:active {
+          border-color: #555;
+          background-color: #555;
+        }
+    }
+  }
+}
+
+form{
+  display: flex;
+  flex-flow: column;
+  width: 19em;
+}
+
+label{
+  padding: 0.5em 0;
+}
+input, textarea{
+  width: 100%;
+  border: 0.1em solid #eee;
+  padding: 0.5em 1em;
+}
+
+
+input[type=radio]{
+  width: 5em;
+  height: 1em;
+}

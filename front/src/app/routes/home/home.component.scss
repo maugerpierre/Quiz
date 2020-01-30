@@ -1,0 +1,12 @@
+button{
+  margin: 0.6em;
+  height: 8em;
+
+  &:hover {
+    color: #222;
+  }
+}
+
+main{
+  flex-flow: row;
+}

@@ -1,0 +1,22 @@
+h1{
+  text-align: center;
+}
+
+.answers label{
+  display: flex;
+  align-items: center;
+
+  span{
+    width: 2em;
+ }
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+app-timer{
+  align-self: flex-end;
+}
